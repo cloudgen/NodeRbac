@@ -1,0 +1,111 @@
+# =============================================================================
+# .gitignore — NodeRbac (Node.js package CLI)
+# Detected: Node.js (package.json), Shell (build.sh)
+# Docs: track docs/requirements/** ; ignore harness/skills/terms/policies/templates
+# Artifacts: compiled, caches, temp, secrets
+# =============================================================================
+
+# --- Secrets / local env ---
+.env
+.env.*
+!.env.example
+!.env.sample
+*.pem
+*.key
+!*.key.example
+
+# --- OS ---
+.DS_Store
+.DS_Store?
+Thumbs.db
+Desktop.ini
+ehthumbs.db
+._*
+
+# --- Editors / IDEs ---
+*.swp
+*.swo
+*~
+.idea/
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+*.code-workspace
+
+# --- Temp / scratch / logs ---
+tmp/
+temp/
+temps/
+*.tmp
+*.temp
+*.bak
+*.orig
+*.rej
+*.log
+logs/
+*.pid
+*.seed
+
+# --- Generic build / package ---
+build/
+dist/
+out/
+output/
+bin/
+obj/
+*.o
+*.a
+*.so
+*.dylib
+*.dll
+*.exe
+*.class
+*.jar
+noderbac-*.tgz
+
+# --- Caches ---
+.cache/
+*.cache
+.turbo/
+.parcel-cache/
+.eslintcache
+.stylelintcache
+*.tsbuildinfo
+
+# --- Node.js ---
+node_modules/
+jspm_packages/
+.npm/
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+bower_components/
+web_modules/
+.next/
+.nuxt/
+.svelte-kit/
+.angular/cache/
+.vite/
+coverage/
+.nyc_output/
+.pnpm-store/
+npm-debug.log*
+
+# --- Local H2 / agent backups (never commit) ---
+.h2-backup-*/
+.h1-backup-*/
+
+# --- Agent harness (root) — local only ---
+AGENTS.md
+CLAUDE.md
+.claude/
+.cursor/
+.codex/
+
+# --- Docs layer — track requirements only ---
+docs/**
+!docs/.gitignore
+!docs/requirements/
+!docs/requirements/**

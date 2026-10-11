@@ -1,0 +1,27 @@
+{
+  "name": "noderbac",
+  "version": "1.0.0",
+  "description": "Online role-based access control and centralized configuration",
+  "type": "module",
+  "bin": {
+    "node-rbac": "./src/NodeRbac/cli.js"
+  },
+  "exports": {
+    ".": "./src/NodeRbac/index.js"
+  },
+  "files": [
+    "src/NodeRbac",
+    "LICENSE.md",
+    "README.md"
+  ],
+  "engines": {
+    "node": ">=22"
+  },
+  "author": "Wong Chun Fai <cloudgen.wong@gmail.com>",
+  "license": "MIT",
+  "homepage": "https://github.com/cloudgen/NodeRbac",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cloudgen/NodeRbac.git"
+  }
+}
